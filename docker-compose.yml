@@ -1,0 +1,37 @@
+services:
+  aklow-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_UMAMI_WEBSITE_ID: 7c03ea92-312c-4e0d-9285-af74e917cf7b
+    container_name: aklow-website
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:2010:3000"
+    networks:
+      - default
+      - studiomeyer-network
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://matthiasmeyer:9jX7l8DpEmznnqf1EaJgeXRu5fH+G2lKAztxrZT7yt4=@bc4f332eeb94_studiomeyer-postgres:5432/aklow_chatbot
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+      - AI_WORKSPACE_DATABASE_URL=postgresql://matthiasmeyer:9jX7l8DpEmznnqf1EaJgeXRu5fH+G2lKAztxrZT7yt4=@bc4f332eeb94_studiomeyer-postgres:5432/ai_workspace
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 384M
+
+networks:
+  studiomeyer-network:
+    external: true
