@@ -1,8 +1,8 @@
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aklow-labs.com';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com';
 
 export const siteConfig = {
   company: {
-    name: 'Aklow Labs',
+    name: 'YourBrand',
     tagline: 'AI Workspace',
     description:
       'AI Workspace with persistent memory. Your AI remembers context, learns preferences, and gets better over time.',
@@ -10,7 +10,7 @@ export const siteConfig = {
   },
 
   contact: {
-    email: 'hello@aklow-labs.com',
+    email: 'hello@example.com',
     phone: '',
     phoneRaw: '',
   },
@@ -24,9 +24,9 @@ export const siteConfig = {
   },
 
   social: {
-    twitter: 'aklow_labs',
-    github: 'AklowLabs',
-    telegram: 'aklow_bot',
+    twitter: 'yourhandle',
+    github: 'yourbrand',
+    telegram: 'yourbot',
   },
 
   seo: {
@@ -47,16 +47,16 @@ export const siteConfig = {
   },
 
   legal: {
-    legalName: 'Aklow Labs (Matthias Meyer)',
+    legalName: 'YourBrand (Matthias Meyer)',
     vatId: '',
   },
 
   links: {
-    app: 'https://saas.aklow-labs.com',
-    telegram: 'https://t.me/aklow_bot',
-    github: 'https://github.com/AklowLabs',
-    twitter: 'https://x.com/aklow_labs',
-    docs: 'https://saas.aklow-labs.com',
+    app: 'https://app.example.com',
+    telegram: 'https://t.me/yourbot',
+    github: 'https://github.com/yourbrand',
+    twitter: 'https://x.com/yourhandle',
+    docs: 'https://app.example.com',
   },
 } as const;
 

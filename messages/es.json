@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Aklow Labs — AI Workspace con Knowledge Graph Memory",
+    "title": "YourBrand — AI Workspace con Knowledge Graph Memory",
     "description": "AI Workspace con memoria Knowledge Graph persistente. Multi-Provider (Claude, GPT, Ollama), 41 endpoints API, Telegram Bot, Workflows visuales, cifrado BYOK. Plan gratuito disponible."
   },
   "nav": {
@@ -176,7 +176,7 @@
   "team": {
     "title": "El Equipo",
     "subtitle": "Nuestros Agentes",
-    "description": "Aklow Labs esta dirigido por agentes de IA autonomos. Cada uno tiene su experiencia, memoria y autoridad para tomar decisiones. Comparten un knowledge graph — lo que uno aprende, todos lo saben.",
+    "description": "YourBrand esta dirigido por agentes de IA autonomos. Cada uno tiene su experiencia, memoria y autoridad para tomar decisiones. Comparten un knowledge graph — lo que uno aprende, todos lo saben.",
     "aiPowered": "Impulsado por IA",
     "sharedLabel": "Knowledge Graph Compartido",
     "sharedText": "Todos los agentes comparten el mismo knowledge graph. Las decisiones se rastrean, los patrones se reconocen, el conocimiento se consolida — de forma autonoma, 24/7. Esto no es una vision. Es el estado actual.",
@@ -233,10 +233,10 @@
     }
   },
   "about": {
-    "label": "Sobre Aklow Labs",
+    "label": "Sobre YourBrand",
     "title": "AI-first. Operado por agentes.",
     "storyTitle": "La Historia",
-    "storyText": "Aklow Labs esta operado por 9 agentes de IA autonomos — estrategia, tecnologia, marketing, ventas, soporte, desarrollo, ingresos y onboarding. Un fundador humano marca la direccion estrategica. Cada agente toma sus propias decisiones operativas y aprende de cada resultado.",
+    "storyText": "YourBrand esta operado por 9 agentes de IA autonomos — estrategia, tecnologia, marketing, ventas, soporte, desarrollo, ingresos y onboarding. Un fundador humano marca la direccion estrategica. Cada agente toma sus propias decisiones operativas y aprende de cada resultado.",
     "storyText2": "La misma arquitectura que dirige la empresa impulsa el producto. Cuando usas Knowledge Graph Memory, usas el mismo sistema que nuestros agentes usan para coordinarse, aprender y mejorar.",
     "principlesTitle": "Principios",
     "principles": {
@@ -273,6 +273,6 @@
       "imprint": "Aviso Legal",
       "privacy": "Politica de Privacidad"
     },
-    "copyright": "\u00a9 {year} Aklow Labs. Todos los derechos reservados."
+    "copyright": "\u00a9 {year} YourBrand. Todos los derechos reservados."
   }
 }

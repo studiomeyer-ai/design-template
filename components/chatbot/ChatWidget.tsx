@@ -11,7 +11,7 @@ interface ChatMessage {
 }
 
 function getVisitorHash(): string {
-  const key = 'aklow_visitor';
+  const key = 'site_visitor';
   let hash = document.cookie.match(new RegExp(`(?:^|; )${key}=([^;]*)`))?.[1];
 
   if (!hash) {

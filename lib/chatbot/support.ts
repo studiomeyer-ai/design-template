@@ -51,7 +51,7 @@ async function sendTelegramAlert(
   if (!token || !chatId) return;
 
   const priorityEmoji = priority === 'high' ? '🔴' : priority === 'medium' ? '🟡' : '🟢';
-  const text = `${priorityEmoji} *Aklow Chatbot Ticket #${ticketId}*\n\n*Topic:* ${topic}\n*Priority:* ${priority}\n*Summary:* ${summary}\n\nhttps://aklow-labs.com`;
+  const text = `${priorityEmoji} *Support Ticket #${ticketId}*\n\n*Topic:* ${topic}\n*Priority:* ${priority}\n*Summary:* ${summary}\n\nhttps://example.com`;
 
   try {
     await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {

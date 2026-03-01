@@ -38,7 +38,7 @@ export default function Navigation() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between">
             <Link href="/" className="text-xl font-semibold text-white tracking-tight">
-              aklow<span className="text-zinc-500 font-normal">.labs</span>
+              Your<span className="text-zinc-500 font-normal">Brand</span>
             </Link>
 
             <div className="hidden md:flex items-center gap-8">
@@ -47,7 +47,7 @@ export default function Navigation() {
                   {link.label}
                 </a>
               ))}
-              <a href="https://saas.aklow-labs.com" className="btn-gradient px-5 py-2.5 text-sm">
+              <a href="https://app.example.com" className="btn-gradient px-5 py-2.5 text-sm">
                 {t('cta')}
               </a>
             </div>
@@ -93,7 +93,7 @@ export default function Navigation() {
                   </motion.a>
                 ))}
                 <motion.a
-                  href="https://saas.aklow-labs.com"
+                  href="https://app.example.com"
                   onClick={() => setMobileOpen(false)}
                   initial={{ opacity: 0, x: -16 }}
                   animate={{ opacity: 1, x: 0 }}
