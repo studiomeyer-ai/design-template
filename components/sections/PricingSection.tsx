@@ -75,7 +75,7 @@ export default function PricingSection() {
                 </ul>
 
                 <a
-                  href="https://saas.aklow-labs.com"
+                  href="#"
                   className={`block w-full py-3 rounded-md font-medium transition-all text-center text-sm ${
                     isPro
                       ? 'btn-gradient'

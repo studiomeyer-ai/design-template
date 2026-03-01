@@ -26,13 +26,13 @@ export default function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="https://saas.aklow-labs.com" className="btn-gradient">
+            <a href="#" className="btn-gradient">
               {t('cta')}
               <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </a>
-            <a href="https://t.me/aklow_bot" className="btn-ghost" target="_blank" rel="noopener noreferrer">
+            <a href="#" className="btn-ghost" target="_blank" rel="noopener noreferrer">
               Telegram Bot
             </a>
           </div>

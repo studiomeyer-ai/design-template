@@ -47,7 +47,7 @@ export const siteConfig = {
   },
 
   legal: {
-    legalName: 'YourBrand (Matthias Meyer)',
+    legalName: 'Your Name',
     vatId: '',
   },
 

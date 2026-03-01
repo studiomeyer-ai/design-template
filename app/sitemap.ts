@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aklow-labs.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com';
   const locales = ['en', 'de', 'es'];
   const lastModified = new Date();
 

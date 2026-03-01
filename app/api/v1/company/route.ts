@@ -27,7 +27,7 @@ export function GET() {
     hours: siteConfig.hours.structured,
     social: siteConfig.social,
     ai_ready: true,
-    provider: "Aklow Labs",
+    provider: siteConfig.company.name,
   };
 
   return NextResponse.json(company, {

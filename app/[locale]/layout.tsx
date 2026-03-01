@@ -10,7 +10,6 @@ import '../globals.css';
 import Navigation from '@/components/sections/Navigation';
 import CustomCursor from '@/components/effects/CustomCursor';
 import NoiseOverlay from '@/components/effects/NoiseOverlay';
-import { ChatWidgetLoader } from '@/components/chatbot/ChatWidgetLoader';
 import { siteConfig } from '../../site.config';
 
 const inter = Inter({
@@ -151,8 +150,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@aklow_labs',
-      creator: '@aklow_labs',
+      site: `@${siteConfig.social.twitter}`,
+      creator: `@${siteConfig.social.twitter}`,
       title,
       description,
       images: [seo.ogImage],
@@ -309,7 +308,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           <NoiseOverlay />
           <Navigation />
           <main id="main-content" role="main" tabIndex={-1}>{children}</main>
-          <ChatWidgetLoader />
         </NextIntlClientProvider>
       </body>
     </html>
